@@ -43,7 +43,7 @@ const play='<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" vie
 // time variables :
 
 
-const IS_TEST_MODE = true; 
+const IS_TEST_MODE = false; 
 
 let currentTime = IS_TEST_MODE ? 5 : 25; 
 let totalDuration = 0;
