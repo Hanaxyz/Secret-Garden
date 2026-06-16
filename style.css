@@ -200,7 +200,7 @@ min-height: 100vh;
 }
 
 body::before{
-    background-image:url("assets/garden.PNG");
+     background-image:url("assets/garden.png");
     content:'';
     position: fixed;
     top: 0;
