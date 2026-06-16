@@ -1,0 +1,194 @@
+
+  
+  <!--my first project !-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Garden</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="seeds-style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Caveat:wght@400..700&family=Playwrite+NO:wght@100..400&display=swap" rel="stylesheet">
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+  
+
+
+
+
+
+  <!--header and logo section:-->
+
+  <header>
+
+  <img src="assets/thornsPattern.png" class="pattern pattern-left"> 
+    <img src="assets/thornsPattern.png" class="pattern pattern-right"> 
+
+<div class="logo-container">
+<img src="assets/logo.PNG" class="main-logo">
+
+
+</div>
+
+<!--list-->
+<ul class="list">
+
+
+<li><a href="index.html">Mission</a></li>  
+<li><a href="garden.html">My Garden</a></li>
+<li><a href="aboutme.html">About</a></li>
+<li><a href="dashBoard.html">Dash Board</a></li>
+ </ul>
+   
+
+
+
+
+
+  </header>
+    
+
+    
+    <!--Welcome section-->
+    <section id ="welcome-page">
+      <h1>Welcome to Secret Garden</h1>
+    <form id="user-form">
+    <label for="name">Hi ! Please Enter Your Name:</label>
+    <input type ="text" id ="user-input" placeholder="Enter Your name..." required>
+    <button type ="button" id="submit-name">Submit</button>
+    </form>
+    </section>
+
+
+
+     <!--Hi-user section:-->
+
+     <span id="hi-user">
+
+    <h2 id="welcome-user">Welcome,<span id="name">!</span></h2>
+
+     </span>
+
+
+
+<!--Seeds Selection !-->
+<div class="main-container">
+<div class="seeds">
+     <h1>Choose a flower to start your mission :</h1>
+     <div class="seeds-container">
+    <img src="assets/camiSeed.png" class="cami-seed" alt="camillia">
+    <img src="assets/lotusSeed.png" class="lotusll-seed" alt="lotus">
+    <img src="assets/sunSeed.png" class="sun-seed" alt="sunFlower">
+</div>
+</div>
+
+
+<!--Main Card:)-->
+<div class="task-card">
+<input type="text" id="task-title" placeholder="Your Mission Title">
+<div id="flower-display" class="task-flower"></div>
+<p class="notes">Notes:</p>
+<textarea id="add-notes" placeholder="Add some notes..."></textarea>
+
+<button id="start-set">Start !</button>
+
+</div>
+</div>
+
+
+
+
+
+
+  <!--timer section-->
+
+  <section id="timer-stepper">
+
+    <h2 id="set-title">Set Your Mission Time</h2>
+
+    <div class="controls-container">
+       <button type="button" id="decrease-time">-</button>
+
+       <span class="time-wrapper">
+    <span id="time-display">25</span> <span id="minutes">Minutes</span>
+    <!--Play button-->
+    <button type="button" id="pause" style="background: none; border: none; cursor: pointer;">
+   <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18l-2 0l0 -12l2 0l0 12M15 6l2 0l0 12l-2 0l0 -12"><animate fill="freeze" attributeName="d" dur="0.6s" keyTimes="0;0.33;1" values="M13 15l-5 3l0 -12l5 3l0 0M13 9l5 3l0 0l-5 3l0 0;M13 15l-5 3l0 -12l5 3l0 6M13 9l5 3l0 0l-5 3l0 -6;M9 18l-2 0l0 -12l2 0l0 12M15 6l2 0l0 12l-2 0l0 -12"/></path></svg>
+
+    </button>
+
+  </span>
+   <button type="button" id="increase-time">+</button>
+        
+
+    </div>
+
+   
+     </div>
+    <br><br>
+    <button type="button" id="start-now">Start Mission !</button>
+   
+
+  </section>
+
+  <!--the main garden!!!-->
+
+  <div class="big-thorns">
+    <img src="assets/thorns1.PNG" id="thorns-1"  class="visual-layer">
+    <img src="assets/thorns2.PNG" id="thorns-2" class="visual-layer">
+
+    </div>
+
+<div class="anim-throns">
+    <img src="assets/thornsT.png" class="pattern pattern-top">
+    <img src="assets/thornsT.png" class="pattern pattern-bottom">  
+
+</div>
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="dashBoard.js"></script>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
