@@ -28,6 +28,7 @@ const timeControl=document.querySelector(".controls-container");//T
 
 const startMission=document.getElementById("start-now");//F
 
+let isFlowerSelected = false;
 
 
 // pause & play buttons : 
@@ -162,25 +163,17 @@ function chooseFlower(){
 chooseFlower();
 
 
-if(submitFlower){
-
-
-    submitFlower.addEventListener('click',()=>{
-        mainChoose.style.display="none";
-        Hiuser.style.display="none";
-        timerStepper.style.display='flex';
-
-
-       
-       
-
-
-    })
-
-
-
+if (submitFlower) {
+    submitFlower.addEventListener('click', () => {
+        if (selectedFlower === '') {
+            alert("Choose a flower !");
+            return;
+        }
+        mainChoose.style.display = "none";
+        Hiuser.style.display = "none";
+        timerStepper.style.display = 'flex';
+    });
 }
-
 
 //timer part : 
 function timersetting(){
